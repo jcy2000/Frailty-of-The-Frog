@@ -70,6 +70,16 @@ public class ProjectileMove : MonoBehaviour
             return;
         }
 
+        if (collision.gameObject.tag == "Collectible")
+        {
+            return;
+        }
+
+        if (fromEnemy && collision.gameObject.tag == "Enemy")
+        {
+            return;
+        }
+
         if (!dealtDamage && isLive)
         {
             if ((fromEnemy && collision.GetComponent<PlayerHealth>()) || (!fromEnemy && collision.GetComponent<EnemyHealth>()))
