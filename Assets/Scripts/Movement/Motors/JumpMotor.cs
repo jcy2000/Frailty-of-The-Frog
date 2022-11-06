@@ -61,13 +61,17 @@ public class JumpMotor : MonoBehaviour, IJump
         UpdateGravityScale();
     }
 
+    void Update()
+    {
+        if(CheckGround())
+            jumpCount = numberOfJumps;
+    }
+
     public bool Jump(){
-        if (CheckGround()){
-            jumpCount = numberOfJumps - 1;
-        }else if (jumpCount > 0) {
+        if (jumpCount > 0) {
             jumpCount--;
         }
-        else{
+        else {
             return false;
         }
 

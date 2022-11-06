@@ -22,8 +22,12 @@ public abstract class Health : MonoBehaviour, IDamagable
     public bool dead { get; protected set; }
 
     [Header("Play a sound when taking damage?")]
-    public AudioClip sound;
-    public float soundVolume = 1f;
+    public AudioClip hurtSound;
+    public float hurtSoundVolume = 1f;
+
+    [Header("Play a sound when dead?")]
+    public AudioClip deathSound;
+    public float deathSoundVolume = 1f;
 
     virtual protected void Awake()
     {
@@ -46,8 +50,8 @@ public abstract class Health : MonoBehaviour, IDamagable
             else StartCoroutine(ImmunityReset());
 
             // trigger audio event
-            if (sound != null)
-                AudioManager.audioManager?.playAudio(sound, soundVolume);
+            if (hurtSound != null)
+                AudioManager.audioManager?.playAudio(hurtSound, hurtSoundVolume);
         }
     }
 

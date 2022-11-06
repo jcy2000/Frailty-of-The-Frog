@@ -15,6 +15,7 @@ public class ContactAttack : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
+        Debug.Log(collision.gameObject.name);
         if (!disable)
         {
             if ((onlyDamagePlayer && collision.gameObject.GetComponent<PlayerHealth>()) || (!onlyDamagePlayer && collision.gameObject.GetComponent<Health>()))

@@ -11,14 +11,7 @@ public class Spike : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (myScript == null)
-        {
             return;
-        }
-
-        if (collision.gameObject.tag == "Enemy")
-        {
-            return;
-        }
 
         if (!dealtDamage)
         {

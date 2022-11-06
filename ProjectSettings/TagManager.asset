@@ -8,6 +8,7 @@ TagManager:
   - CheckPoint
   - lever
   - Enemy
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -44,6 +45,9 @@ TagManager:
   m_SortingLayers:
   - name: Background
     uniqueID: 2147808421
+    locked: 0
+  - name: Environment
+    uniqueID: 1471734225
     locked: 0
   - name: Default
     uniqueID: 0

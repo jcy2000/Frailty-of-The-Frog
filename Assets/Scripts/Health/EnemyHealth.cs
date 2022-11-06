@@ -51,8 +51,8 @@ public class EnemyHealth : Health
             else StartCoroutine(ImmunityReset());
 
             // trigger audio event
-            if (sound != null)
-                AudioManager.audioManager?.playAudio(sound, soundVolume);
+            if (hurtSound != null)
+                AudioManager.audioManager?.playAudio(hurtSound, hurtSoundVolume);
         }
     }
 
