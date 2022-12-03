@@ -43,7 +43,7 @@ public class PlayerHealth : Health
             else StartCoroutine(ImmunityReset());
 
             // trigger audio event
-            if (hurtSound != null)
+            if (hurtSound != null && currentHealth > 0)
                 AudioManager.audioManager?.playAudio(hurtSound, hurtSoundVolume);
         }
     }

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+enum MoveDirection { Left, Right, Up, Down };
+
 public class Interactable : MonoBehaviour, IInteractable
 {
     [Header("Put the sprite for when the object is turned OFF here")]
@@ -42,6 +44,12 @@ public class Interactable : MonoBehaviour, IInteractable
     private bool hasKey;
     private GameObject player;
 
+    public Transform[] ObjectsToMove;
+    private bool MovingObjects = false;
+
+    [SerializeField]
+    MoveDirection MoveDirection = new MoveDirection();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -76,6 +84,15 @@ public class Interactable : MonoBehaviour, IInteractable
         {
             interact();
             Change();
+
+            if(ObjectsToMove.Length > 0)
+            {
+                MovingObjects = true;
+            }
+        }
+        if(MovingObjects)
+        {
+            StartCoroutine(MoveObjects());
         }
     }
 
@@ -201,6 +218,15 @@ public class Interactable : MonoBehaviour, IInteractable
             {
                 spriteRenderer.sprite = OnSprite;
             }
+        }
+    }
+
+    public IEnumerator MoveObjects()
+    {
+        yield return new WaitForSeconds(1);
+        for (int i = 0; i < ObjectsToMove.Length; i++)
+        {
+            ObjectsToMove[i].position = new Vector2(ObjectsToMove[i].position.x + Time.deltaTime, ObjectsToMove[i].position.y);
         }
     }
 }
