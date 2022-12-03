@@ -226,7 +226,26 @@ public class Interactable : MonoBehaviour, IInteractable
         yield return new WaitForSeconds(1);
         for (int i = 0; i < ObjectsToMove.Length; i++)
         {
-            ObjectsToMove[i].position = new Vector2(ObjectsToMove[i].position.x + Time.deltaTime, ObjectsToMove[i].position.y);
+            Vector2 vect2;
+            switch(MoveDirection)
+            {
+                case MoveDirection.Up:
+                    vect2 = new Vector2(ObjectsToMove[i].position.x, ObjectsToMove[i].position.y + Time.deltaTime);
+                    break;
+                case MoveDirection.Down:
+                    vect2 = new Vector2(ObjectsToMove[i].position.x, ObjectsToMove[i].position.y - Time.deltaTime);
+                    break;
+                case MoveDirection.Left:
+                    vect2 = new Vector2(ObjectsToMove[i].position.x - Time.deltaTime, ObjectsToMove[i].position.y);
+                    break;
+                case MoveDirection.Right:
+                    vect2 = new Vector2(ObjectsToMove[i].position.x + Time.deltaTime, ObjectsToMove[i].position.y);
+                    break;
+                default:
+                    vect2 = Vector2.zero;
+                    break;
+            }
+            ObjectsToMove[i].position = vect2;
         }
     }
 }

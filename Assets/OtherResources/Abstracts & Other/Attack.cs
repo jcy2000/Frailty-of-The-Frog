@@ -89,7 +89,6 @@ public abstract class Attack : MonoBehaviour, IAttack<Health>
         }
         if (GetComponent<EnemyAttackManager>())
         {
-            Debug.Log(gameObject.name + " is an enemy.", gameObject);
             isEnemy = true;
         }
         if (!attackOffset)

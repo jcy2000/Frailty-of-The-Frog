@@ -9,6 +9,7 @@ TagManager:
   - lever
   - Enemy
   - Ground
+  - Terrain
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Spikes
+  - Player
   - 
   - 
   - 

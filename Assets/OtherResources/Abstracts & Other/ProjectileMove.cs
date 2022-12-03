@@ -70,7 +70,7 @@ public class ProjectileMove : MonoBehaviour
             return;
         }
 
-        if (collision.gameObject.tag == "Collectible")
+        if (collision.gameObject.tag != "Player" && collision.gameObject.tag != "Enemy" && collision.gameObject.tag != "Terrain")
         {
             return;
         }
