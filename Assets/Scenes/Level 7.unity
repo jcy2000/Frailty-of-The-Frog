@@ -8215,7 +8215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7421134922462261172, guid: 441e81e0a00d28241a37eccf2fea31c8, type: 3}
       propertyPath: m_FontData.m_MaxSize
-      value: 125
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7421134922462261172, guid: 441e81e0a00d28241a37eccf2fea31c8, type: 3}
       propertyPath: m_FontData.m_MinSize
@@ -8223,7 +8223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7421134922462261172, guid: 441e81e0a00d28241a37eccf2fea31c8, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7421134922462261172, guid: 441e81e0a00d28241a37eccf2fea31c8, type: 3}
       propertyPath: m_FontData.m_Alignment
@@ -8263,11 +8263,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7421134922706112034, guid: 441e81e0a00d28241a37eccf2fea31c8, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 243.3911
+      value: 567.759
       objectReference: {fileID: 0}
     - target: {fileID: 7421134922706112034, guid: 441e81e0a00d28241a37eccf2fea31c8, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 38.1658
+      value: 89.0294
       objectReference: {fileID: 0}
     - target: {fileID: 7421134922706112034, guid: 441e81e0a00d28241a37eccf2fea31c8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8299,11 +8299,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7421134922706112034, guid: 441e81e0a00d28241a37eccf2fea31c8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -331.8
+      value: -666.81604
       objectReference: {fileID: 0}
     - target: {fileID: 7421134922706112034, guid: 441e81e0a00d28241a37eccf2fea31c8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 235.92
+      value: 488.56824
       objectReference: {fileID: 0}
     - target: {fileID: 7421134922706112034, guid: 441e81e0a00d28241a37eccf2fea31c8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10000,7 +10000,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283240598}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.607, y: -1.152, z: 0.22643198}
+  m_LocalPosition: {x: 8.96, y: -1.19, z: 0.22643198}
   m_LocalScale: {x: 0.87425476, y: 0.87425476, z: 0.87425476}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10072,7 +10072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 3
-  amount: 1
+  amount: 2
 --- !u!58 &1283240602
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -10083,7 +10083,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.06017208, y: 0.22488976}
@@ -14434,7 +14434,7 @@ MonoBehaviour:
   coinsCollected: 0
   showCoins: 0
   coinsCollectedGoal: 0
-  coinGoalAmount: 0
+  coinGoalAmount: 10
   ammoCollected: 0
   showAmmo: 0
   coinCount: {fileID: 0}
@@ -17331,7 +17331,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.95517325}
+  m_Offset: {x: 0.6035589, y: -0.95517325}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -17342,7 +17342,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.6569533, y: 0.5996533}
+  m_Size: {x: 4.449835, y: 0.59965324}
   m_EdgeRadius: 0
 --- !u!212 &1956655042
 SpriteRenderer:
@@ -18978,7 +18978,7 @@ MonoBehaviour:
   doIFlip: 0
   facingRight: 0
   idle: {fileID: 7400000, guid: ad1d16dda1ef2ac408b422e0b1cc4412, type: 2}
-  moveSide: {fileID: 7400000, guid: 8fccad17974c2e34e80d957cd7035147, type: 2}
+  moveSide: {fileID: 7400000, guid: ad1d16dda1ef2ac408b422e0b1cc4412, type: 2}
   moveUp: {fileID: 0}
   moveDown: {fileID: 0}
   attack: {fileID: 7400000, guid: bad8d20c6abceaf49807bc5be5d53a72, type: 2}
